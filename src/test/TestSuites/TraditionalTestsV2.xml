@@ -1,0 +1,50 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Traditional Tests V2" verbose="1">
+
+	<test name="Chrome - Laptop - 1200x700">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="device" value="laptop"></parameter>
+		<classes>
+			<class name="TraditionalTestsV2">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Firefox - Laptop - 1200x700">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="device" value="laptop"></parameter>
+		<classes>
+			<class name="TraditionalTestsV2">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Chrome - Tablet - 768x700">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="device" value="tablet"></parameter>
+		<classes>
+			<class name="TraditionalTestsV2">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Firefox - Tablet - 768x700">
+		<parameter name="browser" value="firefox"></parameter>
+		<parameter name="device" value="tablet"></parameter>
+		<classes>
+			<class name="TraditionalTestsV2">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Chrome - Mobile - 500x700">
+		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="device" value="mobile"></parameter>
+		<classes>
+			<class name="TraditionalTestsV2">
+			</class>
+		</classes>
+	</test>
+	
+</suite>

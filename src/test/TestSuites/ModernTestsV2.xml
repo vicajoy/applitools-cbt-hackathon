@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Modern Tests V2" verbose="1">
+    <test name="Modern Tests V2">
+        <classes>
+            <class name="ModernTestsV2">
+            </class>
+        </classes>
+    </test>
+</suite>
