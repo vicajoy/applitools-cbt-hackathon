@@ -1,13 +1,17 @@
 This repository has been designed for `Applitools Cross Browser Testing Hackathon` 
-and includes automated tests for the hackathon website.
+and includes automated tests for the [Version 1](https://demo.applitools.com/gridHackathonV1.html)
+and [Version 2](https://demo.applitools.com/gridHackathonV2.html) applications.
 
 
 ## Packages
 The project uses the following packages:
 * Selenium WebDriver 3.141.59
-* ChromeDriver 81.0.4044.138, GeckoDriver v0.26.0
+* ChromeDriver 81.0.4044.138 
+* GeckoDriver 0.26.0
 * Java JDK 14
+* Apache Maven 3.6.3
 * TestNG 7.1.0
+* AssertJ 3.16.1
 * Applitools Eyes SDK 3.162.0
 
 
@@ -29,9 +33,8 @@ use `TraditionalTestsV2.xml` file. The same applies for the modern tests.
 with viewport sizes of 1200x700, 768x700 and 500x700.
 
 ## Notes
-* As I use Linux platform as my working environment, Edge Chromium was not available to me. 
-* Currently, Linux supports Chrome version 81, that's why I ran modern tests on that version as well 
-(I was having some issues with version 83 and was not able to debug them locally).
+* Used Chrome v81.0.4 and Firefox v77.0.1 browsers (the latest ones that Linux supports).
+* Edge Chromium is not available on Linux, that's why it's missing on my tests.
 
 
 ## Author
