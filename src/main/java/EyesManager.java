@@ -43,10 +43,10 @@ public class EyesManager {
 
     private static Configuration getConfig() {
         Configuration vgConfig = new Configuration();
-        vgConfig.addBrowser(1200, 700, BrowserType.CHROME_ONE_VERSION_BACK);
+        vgConfig.addBrowser(1200, 700, BrowserType.CHROME);
         vgConfig.addBrowser(1200, 700, BrowserType.FIREFOX);
         vgConfig.addBrowser(1200, 700, BrowserType.EDGE);
-        vgConfig.addBrowser(768, 700, BrowserType.CHROME_ONE_VERSION_BACK);
+        vgConfig.addBrowser(768, 700, BrowserType.CHROME);
         vgConfig.addBrowser(768, 700, BrowserType.FIREFOX);
         vgConfig.addBrowser(768, 700, BrowserType.EDGE);
         vgConfig.addDeviceEmulation(DeviceName.iPhone_X, ScreenOrientation.PORTRAIT);
