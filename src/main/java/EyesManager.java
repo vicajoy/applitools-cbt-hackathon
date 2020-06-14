@@ -23,10 +23,19 @@ public class EyesManager {
         eyes.setConfiguration(getConfig());
     }
 
+    /**
+     * Sets the name for the batch of tests
+     * @param batchName      String - e.g. UFG Hackathon
+     */
     public void setBatchName(String batchName) {
         eyes.setBatch(new BatchInfo(batchName));
     }
 
+    /**
+     * Takes screenshot of the entire window and compares with the baseline
+     * @param testName      String - name of the test in Applitools, e.g. Task 1
+     * @param stepName      String - name of the screenshot, e.g. Search field is not displayed
+     */
     public void validateWindow(String testName, String stepName) {
         eyes.open(driver, appName, testName);
         eyes.setMatchLevel(MatchLevel.STRICT);
@@ -34,6 +43,12 @@ public class EyesManager {
         eyes.close();
     }
 
+    /**
+     * Takes screenshot of element by given locator and compares with the baseline
+     * @param testName      String - name of the test in Applitools, e.g. Task 1
+     * @param stepName      String - name of the screenshot, e.g. Search field is not displayed
+     * @param locator       By - locator to validate
+     */
     public void validateElement(By locator, String testName, String stepName) {
         eyes.open(driver, appName, testName);
         eyes.setMatchLevel(MatchLevel.STRICT);
@@ -41,6 +56,10 @@ public class EyesManager {
         eyes.close();
     }
 
+    /**
+     * Returns configuration of browser types and viewport sizes for Visual Grid Runner
+     * @return		        configuration of the runner
+     */
     private static Configuration getConfig() {
         Configuration vgConfig = new Configuration();
         vgConfig.addBrowser(1200, 700, BrowserType.CHROME);

@@ -1,5 +1,4 @@
 package pages;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.util.List;
 
 public class BasePage {
@@ -18,49 +16,79 @@ public class BasePage {
         this.driver = driver;
     }
 
-    /** Find element using given locator
-     * @param index starts at 1
-     * */
-    protected WebElement find(By locator, Integer index) {
+    /**
+     * Finds element using given locator
+     * @param index    int - starts at 1
+     * @param locator  By - locator to find the element
+     * @return		   WebElement - element found by index
+     */
+    protected WebElement find(By locator, int index) {
         return driver.findElements(locator).get(index - 1);
     }
 
-    /** Find element using given locator with default index */
+    /**
+     * Finds the first element using given locator
+     * @param locator  By - locator to find the element
+     * @return		   WebElement - first element found
+     */
     protected WebElement find(By locator) {
         return driver.findElements(locator).get(0);
     }
 
-    /** Find all elements using given locator */
+    /**
+     * Finds all elements using given locator
+     * @param locator  By - locator to find the element
+     * @return		   List - all the elements found
+     */
     protected List<WebElement> findAll(By locator) {
         return driver.findElements(locator);
     }
 
-    /** Click on element using locator with given index when it's visible */
+    /**
+     * Clicks on element with given index when it's visible
+     * @param index    int - starts at 1
+     * @param locator  By - locator to find the element
+     */
     protected void click(By locator, int index) {
         waitForVisibilityOf(locator, 5);
         find(locator, index).click();
     }
 
-    /** Click on element with given locator when it's visible */
+    /**
+     * Clicks on the first element with given locator when it's visible
+     * @param locator  By - locator to find the element
+     */
     protected void click(By locator) {
         waitForVisibilityOf(locator, 5);
         find(locator).click();
     }
 
-    /** Type given text into element with given locator */
+    /**
+     * Types given text into element with given locator
+     * @param text     String - text to enter into the element
+     * @param locator  By - locator to find the element
+     */
     protected void type(String text, By locator) {
         waitForVisibilityOf(locator, 5);
         find(locator).sendKeys(text);
     }
 
-    /** Wait for specific ExpectedCondition for the given amount of time in seconds */
+    /**
+     * Waits for specific ExpectedCondition for the given amount of time in seconds
+     * @param condition         condition for WebElement to wait for
+     * @param timeOutInSeconds  int - number of seconds to wait for the condition
+     */
     private void waitFor(ExpectedCondition<WebElement> condition, Integer timeOutInSeconds) {
         timeOutInSeconds = timeOutInSeconds != null ? timeOutInSeconds : 30;
         WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
         wait.until(condition);
     }
 
-    /** Wait for given number of seconds for element with given locator to be visible */
+    /**
+     * Waits for given number of seconds for the element with given locator to be visible
+     * @param locator           By - locator for the element
+     * @param timeOutInSeconds  int - number of seconds to wait for the condition
+     */
     protected void waitForVisibilityOf(By locator, Integer... timeOutInSeconds) {
         int attempts = 0;
         while (attempts < 2) {
@@ -74,7 +102,11 @@ public class BasePage {
         }
     }
 
-    /** Get element text with given locator when it's visible */
+    /**
+     * Gets element text with given locator when it's visible
+     * @param locator  By - locator for the element
+     * @return		   String - text of the element
+     */
     protected String getText(By locator) {
         waitForVisibilityOf(locator, 5);
         return find(locator).getText();

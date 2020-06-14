@@ -10,47 +10,87 @@ public class ProductDetailsPage extends BasePage {
     private String productDescriptionId = "P____83";
     private String productDiscountId = "discount";
 
-    public String getProductNameId() {
-        return productNameId;
-    }
-
-    public String getProductNewPriceId() {
-        return productNewPriceId;
-    }
-
-    public String getProductOldPriceId() {
-        return productOldPriceId;
-    }
-
-    public String getProductDescriptionId() {
-        return productDescriptionId;
-    }
-
-    public String getProductDiscountId() {
-        return productDiscountId;
-    }
-
     public ProductDetailsPage(WebDriver driver) {
         super(driver);
     }
 
+    /**
+     * Getter for the element of product name
+     * @return		   String - DOM ID of product name
+     */
+    public String getProductNameId() {
+        return productNameId;
+    }
+
+    /**
+     * Getter for the element of product new price
+     * @return		   String - DOM ID of product new price
+     */
+    public String getProductNewPriceId() {
+        return productNewPriceId;
+    }
+
+    /**
+     * Getter for the element of product old price
+     * @return		   String - DOM ID of product old price
+     */
+    public String getProductOldPriceId() {
+        return productOldPriceId;
+    }
+
+    /**
+     * Getter for the element of product description
+     * @return		   String - DOM ID of product description
+     */
+    public String getProductDescriptionId() {
+        return productDescriptionId;
+    }
+
+    /**
+     * Getter for the element of product discount
+     * @return		   String - DOM ID of product discount
+     */
+    public String getProductDiscountId() {
+        return productDiscountId;
+    }
+
+    /**
+     * Gets the text of product name
+     * @return		   String - product name text
+     */
     public String getProductName() {
-        return driver.findElement(By.id(productNameId)).getText();
+        return getText(By.id(productNameId));
     }
 
+    /**
+     * Gets the text of product old price
+     * @return		   String - product old price text
+     */
     public String getProductOldPrice() {
-        return driver.findElement(By.id(productOldPriceId)).getText();
+        return getText(By.id(productOldPriceId));
     }
 
+    /**
+     * Gets the text of product new price
+     * @return		   String - product new price text
+     */
     public String getProductNewPrice() {
-        return driver.findElement(By.id(productNewPriceId)).getText();
+        return getText(By.id(productNewPriceId));
     }
 
+    /**
+     * Gets the text of product discount
+     * @return		   String - product discount text
+     */
     public String getProductDiscount() {
-        return driver.findElement(By.id(productDiscountId)).getText();
+        return getText(By.id(productDiscountId));
     }
 
+    /**
+     * Gets the text of product description
+     * @return		   String - product description text
+     */
     public String getProductDescription() {
-        return driver.findElement(By.id(productDescriptionId)).getText();
+        return getText(By.id(productDescriptionId));
     }
 }

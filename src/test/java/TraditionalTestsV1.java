@@ -3,6 +3,13 @@ import org.testng.annotations.Test;
 
 public class TraditionalTestsV1 extends BaseTests {
 
+    /**
+     *  Elements are displayed or not based on the device type.
+     *  Scenario:
+     *  1. Given I use laptop, tablet or mobile
+     *  2. When I go to home page
+     *  3. Then I see elements displayed or not
+     */
     @Test(priority = 1)
     public void testElements() {
         goHomeV1();
@@ -52,6 +59,13 @@ public class TraditionalTestsV1 extends BaseTests {
         }
     }
 
+    /**
+     *  Filtering shoes by color returns the correct number of results.
+     *  Scenario:
+     *  1. Given I am on the home page
+     *  2. When I filter shoes by black color
+     *  3. Then I see two shoes in the results.
+     */
     @Test(priority = 3)
     public void testShoppingExperience() {
         goHomeV1();
@@ -61,6 +75,13 @@ public class TraditionalTestsV1 extends BaseTests {
         softAssert.assertAll();
     }
 
+    /**
+     *  Product details page contains the correct information.
+     *  Scenario:
+     *  1. Given I filter shoes by black color
+     *  2. When I click on the first result
+     *  3. Then I see the correct product information.
+     */
     @Test(priority = 2)
     public void testProductDetails() {
         var productDescription = "These boots are comfortable enough to wear all day. Well made. I love the “look”. " +
