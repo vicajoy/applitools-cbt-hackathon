@@ -9,6 +9,7 @@ public class ProductDetailsPage extends BasePage {
     private String productOldPriceId = "old_price";
     private String productDescriptionId = "P____83";
     private String productDiscountId = "discount";
+    private String sizeValueId = ".nice-select span";
 
     public ProductDetailsPage(WebDriver driver) {
         super(driver);
@@ -55,6 +56,14 @@ public class ProductDetailsPage extends BasePage {
     }
 
     /**
+     * Getter for selected option of size dropdown
+     * @return		   String - DOM ID of selected option of size dropdown
+     */
+    public String getSizeValueId() {
+        return sizeValueId;
+    }
+
+    /**
      * Gets the text of product name
      * @return		   String - product name text
      */
@@ -92,5 +101,13 @@ public class ProductDetailsPage extends BasePage {
      */
     public String getProductDescription() {
         return getText(By.id(productDescriptionId));
+    }
+
+    /**
+     * Gets the selected option of size dropdown
+     * @return		   String - size value text
+     */
+    public String getSelectedOption() {
+        return getText(By.cssSelector(sizeValueId));
     }
 }

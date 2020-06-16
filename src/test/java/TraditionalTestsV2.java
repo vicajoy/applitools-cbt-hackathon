@@ -102,6 +102,8 @@ public class TraditionalTestsV2 extends BaseTests {
                 productDetailsPage.getProductDiscount().equals("-30% discount")));
         softAssert.assertThat(reporterV2(3, "Product description is correct", productDetailsPage.getProductDescriptionId(),
                 productDetailsPage.getProductDescription().contains(productDescription)));
+        softAssert.assertThat(reporterV2(3, "Size dropdown's selected value is correct", productDetailsPage.getSizeValueId(),
+                productDetailsPage.getSelectedOption().contains("Small (S)")));
         softAssert.assertAll();
     }
 }

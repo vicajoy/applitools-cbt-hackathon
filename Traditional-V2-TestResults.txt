@@ -10,6 +10,7 @@ Task: 3, Test Name: Product old price is correct, DOM Id: old_price, Browser: Ch
 Task: 3, Test Name: Product new price is correct, DOM Id: new_price, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Fail
 Task: 3, Test Name: Product discount is correct, DOM Id: discount, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 3, Test Name: Product description is correct, DOM Id: P____83, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
+Task: 3, Test Name: Size dropdown's selected value is correct, DOM Id: .nice-select span, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Fail
 Task: 2, Test Name: Filter results' count is 2, DOM Id: grid_item, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Fail
 Task: 1, Test Name: Profile icon is displayed, DOM Id: A__accesslink__56, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: Cart icon is displayed, DOM Id: A__cartbt__49, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
@@ -23,6 +24,7 @@ Task: 3, Test Name: Product old price is correct, DOM Id: old_price, Browser: Fi
 Task: 3, Test Name: Product new price is correct, DOM Id: new_price, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Fail
 Task: 3, Test Name: Product discount is correct, DOM Id: discount, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 3, Test Name: Product description is correct, DOM Id: P____83, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
+Task: 3, Test Name: Size dropdown's selected value is correct, DOM Id: .nice-select span, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Fail
 Task: 2, Test Name: Filter results' count is 2, DOM Id: grid_item, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Fail
 Task: 1, Test Name: Profile icon is displayed, DOM Id: A__accesslink__56, Browser: Chrome, Viewport: 768 x 700, Device: Tablet, Status: Pass
 Task: 1, Test Name: Cart icon is displayed, DOM Id: A__cartbt__49, Browser: Chrome, Viewport: 768 x 700, Device: Tablet, Status: Pass
@@ -36,6 +38,7 @@ Task: 3, Test Name: Product old price is correct, DOM Id: old_price, Browser: Ch
 Task: 3, Test Name: Product new price is correct, DOM Id: new_price, Browser: Chrome, Viewport: 768 x 700, Device: Tablet, Status: Fail
 Task: 3, Test Name: Product discount is correct, DOM Id: discount, Browser: Chrome, Viewport: 768 x 700, Device: Tablet, Status: Pass
 Task: 3, Test Name: Product description is correct, DOM Id: P____83, Browser: Chrome, Viewport: 768 x 700, Device: Tablet, Status: Pass
+Task: 3, Test Name: Size dropdown's selected value is correct, DOM Id: .nice-select span, Browser: Chrome, Viewport: 768 x 700, Device: Tablet, Status: Fail
 Task: 2, Test Name: Filter results' count is 2, DOM Id: grid_item, Browser: Chrome, Viewport: 768 x 700, Device: Tablet, Status: Fail
 Task: 1, Test Name: Profile icon is displayed, DOM Id: A__accesslink__56, Browser: Firefox, Viewport: 768 x 700, Device: Tablet, Status: Pass
 Task: 1, Test Name: Cart icon is displayed, DOM Id: A__cartbt__49, Browser: Firefox, Viewport: 768 x 700, Device: Tablet, Status: Pass
@@ -49,6 +52,7 @@ Task: 3, Test Name: Product old price is correct, DOM Id: old_price, Browser: Fi
 Task: 3, Test Name: Product new price is correct, DOM Id: new_price, Browser: Firefox, Viewport: 768 x 700, Device: Tablet, Status: Fail
 Task: 3, Test Name: Product discount is correct, DOM Id: discount, Browser: Firefox, Viewport: 768 x 700, Device: Tablet, Status: Pass
 Task: 3, Test Name: Product description is correct, DOM Id: P____83, Browser: Firefox, Viewport: 768 x 700, Device: Tablet, Status: Pass
+Task: 3, Test Name: Size dropdown's selected value is correct, DOM Id: .nice-select span, Browser: Firefox, Viewport: 768 x 700, Device: Tablet, Status: Fail
 Task: 2, Test Name: Filter results' count is 2, DOM Id: grid_item, Browser: Firefox, Viewport: 768 x 700, Device: Tablet, Status: Fail
 Task: 1, Test Name: Profile icon is displayed, DOM Id: A__accesslink__56, Browser: Chrome, Viewport: 500 x 700, Device: Mobile, Status: Pass
 Task: 1, Test Name: Cart icon is displayed, DOM Id: A__cartbt__49, Browser: Chrome, Viewport: 500 x 700, Device: Mobile, Status: Pass
@@ -62,4 +66,5 @@ Task: 3, Test Name: Product old price is correct, DOM Id: old_price, Browser: Ch
 Task: 3, Test Name: Product new price is correct, DOM Id: new_price, Browser: Chrome, Viewport: 500 x 700, Device: Mobile, Status: Fail
 Task: 3, Test Name: Product discount is correct, DOM Id: discount, Browser: Chrome, Viewport: 500 x 700, Device: Mobile, Status: Pass
 Task: 3, Test Name: Product description is correct, DOM Id: P____83, Browser: Chrome, Viewport: 500 x 700, Device: Mobile, Status: Pass
+Task: 3, Test Name: Size dropdown's selected value is correct, DOM Id: .nice-select span, Browser: Chrome, Viewport: 500 x 700, Device: Mobile, Status: Fail
 Task: 2, Test Name: Filter results' count is 2, DOM Id: grid_item, Browser: Chrome, Viewport: 500 x 700, Device: Mobile, Status: Fail
