@@ -8,7 +8,7 @@ The project uses the following packages:
 * Selenium WebDriver 3.141.59
 * ChromeDriver 83.0.4103.97 
 * GeckoDriver 0.26.0
-* Java JDK 14
+* Java JDK 11 or higher
 * Apache Maven 3.6.3
 * TestNG 7.1.0
 * AssertJ 3.16.1

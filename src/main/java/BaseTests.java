@@ -30,25 +30,25 @@ public class BaseTests {
     @BeforeClass(alwaysRun = true)
     public void setUp(@Optional("chrome") String browser, @Optional("laptop") String device) {
         switch (browser) {
-            case "chrome" -> {
+            case "chrome":
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
                 driver = new ChromeDriver();
                 setViewportSize(device);
                 browserName = "Chrome";
-            }
-            case "firefox" -> {
+                break;
+            case "firefox":
                 System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver");
                 driver = new FirefoxDriver();
                 setViewportSize(device);
                 browserName = "Firefox";
-            }
-            default -> {
+                break;
+            default:
                 System.out.println("Do not know how to start " + browser + ", starting chrome.");
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
                 driver = new ChromeDriver();
                 setViewportSize(device);
                 browserName = "Chrome";
-            }
+                break;
         }
         eyesManager = new EyesManager(driver, "Applifashion");
         eyesManager.setBatchName("UFG Hackathon");
@@ -60,21 +60,21 @@ public class BaseTests {
      */
     private void setViewportSize(String device) {
         switch (device) {
-            case "laptop" -> {
+            case "laptop":
                 jsExecutorForViewport(1200, 700);
                 viewport = "1200 x 700";
                 deviceName = "Laptop";
-            }
-            case "tablet" -> {
+                break;
+            case "tablet":
                 jsExecutorForViewport(768, 700);
                 viewport = "768 x 700";
                 deviceName = "Tablet";
-            }
-            case "mobile" -> {
+                break;
+            case "mobile":
                 jsExecutorForViewport(500, 700);
                 viewport = "500 x 700";
                 deviceName = "Mobile";
-            }
+                break;
         }
     }
 
