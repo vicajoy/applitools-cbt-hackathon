@@ -15,26 +15,20 @@ The project uses the following packages:
 * Applitools Eyes SDK 3.162.0
 
 
-## Project Structure
-* `EyesManager` is a wrapper class for Applitools Eyes configuration. 
-`BaseTests` class serve for the setup and teardown of traditional tests.
-* `pages` folder contains BasePage that includes common methods and page objects which represent pages of the website.
-* `tests` folder includes two types of tests - traditional and modern. As there were some differences in locators 
-between V1 and V2, separate files have been created for each version of tests. For Version 1, 
-traditional test results will be written in `traditional-V1-TestResults.txt` file, and for Version 2 
-they will be recorded in `traditional-V2-TestResults.txt` file.
-
-
 ## Setup and Running Tests
 * Applitools API Key is being read from the environment variables.
-* To execute traditional tests against Version 1, run `TraditionalTestsV1.xml` suite. To run them against Version 2, 
-use `TraditionalTestsV2.xml` suite. The same applies for the modern tests.
+* To execute traditional tests against Version 1, run `TraditionalTestV1.xml` suite. To run them against Version 2, 
+use `TraditionalTestV2.xml` suite. The same applies for the modern tests.
 * The suites for traditional tests include all tests which will be running on Chrome and Firefox browsers 
 with viewport sizes of 1200x700, 768x700 and 500x700.
 
+
 ## Notes
+* As there were some differences in locators between V1 and V2, separate files have been created for each version of tests. 
+For Version 1, traditional test results will be written in `traditional-V1-TestResults.txt` file, and for Version 2 
+they will be recorded in `traditional-V2-TestResults.txt` file.
 * Used Chrome v83.0.4 and Firefox v77.0.1 browsers (the latest ones that Linux supports).
-* Edge Chromium is not available on Linux, that's why it's missing in my tests.
+* Edge Chromium is not available on Linux, that's why it's missing in these tests.
 
 
 ## Author

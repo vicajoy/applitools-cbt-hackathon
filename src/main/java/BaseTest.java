@@ -10,15 +10,14 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 
 
-public class BaseTests {
+public class BaseTest {
 
     private WebDriver driver;
     protected HomePage homePage;
     protected static EyesManager eyesManager;
-    public String viewport;
-    public String deviceName;
-    public String browserName;
-
+    protected String viewport;
+    protected String deviceName;
+    protected String browserName;
     SoftAssertions softAssert = new SoftAssertions();
 
     /**
@@ -43,7 +42,7 @@ public class BaseTests {
                 browserName = "Firefox";
                 break;
             default:
-                System.out.println("Do not know how to start " + browser + ", starting chrome.");
+                System.out.println("Do not know how to start " + browser + ", starting Chrome.");
                 System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
                 driver = new ChromeDriver();
                 setViewportSize(device);
@@ -87,9 +86,9 @@ public class BaseTests {
         JavascriptExecutor js = (JavascriptExecutor)driver;
         String windowSize = js.executeScript("return (window.outerWidth - window.innerWidth + " + width + ") + " +
                 "',' + (window.outerHeight - window.innerHeight + " + height + "); ").toString();
-        int _width = Integer.parseInt(windowSize.split(",")[0]);
-        int _height = Integer.parseInt(windowSize.split(",")[1]);
-        driver.manage().window().setSize(new Dimension(_width, _height));
+        int windowWidth = Integer.parseInt(windowSize.split(",")[0]);
+        int windowHeight = Integer.parseInt(windowSize.split(",")[1]);
+        driver.manage().window().setSize(new Dimension(windowWidth, windowHeight));
     }
 
     /** Goes to the home page of Version 1 */

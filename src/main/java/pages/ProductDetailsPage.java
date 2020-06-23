@@ -15,50 +15,26 @@ public class ProductDetailsPage extends BasePage {
         super(driver);
     }
 
-    /**
-     * Getter for the element of product name
-     * @return		   String - DOM ID of product name
-     */
     public String getProductNameId() {
         return productNameId;
     }
 
-    /**
-     * Getter for the element of product new price
-     * @return		   String - DOM ID of product new price
-     */
     public String getProductNewPriceId() {
         return productNewPriceId;
     }
 
-    /**
-     * Getter for the element of product old price
-     * @return		   String - DOM ID of product old price
-     */
     public String getProductOldPriceId() {
         return productOldPriceId;
     }
 
-    /**
-     * Getter for the element of product description
-     * @return		   String - DOM ID of product description
-     */
     public String getProductDescriptionId() {
         return productDescriptionId;
     }
 
-    /**
-     * Getter for the element of product discount
-     * @return		   String - DOM ID of product discount
-     */
     public String getProductDiscountId() {
         return productDiscountId;
     }
 
-    /**
-     * Getter for selected option of size dropdown
-     * @return		   String - DOM ID of selected option of size dropdown
-     */
     public String getSizeValueId() {
         return sizeValueId;
     }

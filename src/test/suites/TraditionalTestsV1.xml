@@ -6,7 +6,7 @@
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="device" value="laptop"></parameter>
 		<classes>
-			<class name="TraditionalTestsV1">
+			<class name="TraditionalTestV1">
 			</class>
 		</classes>
 	</test>
@@ -15,7 +15,7 @@
 		<parameter name="browser" value="firefox"></parameter>
 		<parameter name="device" value="laptop"></parameter>
 		<classes>
-			<class name="TraditionalTestsV1">
+			<class name="TraditionalTestV1">
 			</class>
 		</classes>
 	</test>
@@ -24,7 +24,7 @@
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="device" value="tablet"></parameter>
 		<classes>
-			<class name="TraditionalTestsV1">
+			<class name="TraditionalTestV1">
 			</class>
 		</classes>
 	</test>
@@ -33,7 +33,7 @@
 		<parameter name="browser" value="firefox"></parameter>
 		<parameter name="device" value="tablet"></parameter>
 		<classes>
-			<class name="TraditionalTestsV1">
+			<class name="TraditionalTestV1">
 			</class>
 		</classes>
 	</test>
@@ -42,7 +42,7 @@
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="device" value="mobile"></parameter>
 		<classes>
-			<class name="TraditionalTestsV1">
+			<class name="TraditionalTestV1">
 			</class>
 		</classes>
 	</test>

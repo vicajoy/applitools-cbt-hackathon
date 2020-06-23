@@ -1,7 +1,7 @@
 import org.testng.annotations.Test;
 
 
-public class ModernTestsV2 extends BaseTests {
+public class ModernTestV2 extends BaseTest {
 
     @Test
     public void testElements() {

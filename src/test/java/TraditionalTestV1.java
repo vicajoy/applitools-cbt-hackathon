@@ -1,7 +1,7 @@
 import org.testng.annotations.Test;
 
 
-public class TraditionalTestsV1 extends BaseTests {
+public class TraditionalTestV1 extends BaseTest {
 
     /**
      *  Elements are displayed or not based on the device type.

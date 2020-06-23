@@ -27,98 +27,50 @@ public class HomePage extends BasePage {
         super(driver);
     }
 
-    /**
-     * Getter for profile icon element
-     * @return		   String - DOM ID of product icon
-     */
     public String getProfileIcon() {
         return profileIcon;
     }
 
-    /**
-     * Getter for wishlist icon element
-     * @return		   String - DOM ID of wishlist icon
-     */
     public String getWishlistIcon() {
         return wishlistIcon;
     }
 
-    /**
-     * Getter for cart icon element
-     * @return		   String - DOM ID of cart icon
-     */
     public String getCartIcon() {
         return cartIcon;
     }
 
-    /**
-     * Getter for grid view icon element for Version 1
-     * @return		   String - DOM ID of grid view icon
-     */
     public String getGridViewIconV1() {
         return gridViewIconV1;
     }
 
-    /**
-     * Getter for list view icon element for Version 1
-     * @return		   String - DOM ID of list view icon
-     */
     public String getListViewIconV1() {
         return listViewIconV1;
     }
 
-    /**
-     * Getter for filter icon element  for Version 1
-     * @return		   String - DOM ID of filter icon
-     */
     public String getFiltersIconV1() {
         return filtersIconV1;
     }
 
-    /**
-     * Getter for grid view icon element for Version 2
-     * @return		   String - DOM ID of grid view icon
-     */
     public String getGridViewIconV2() {
         return gridViewIconV2;
     }
 
-    /**
-     * Getter for list view icon element for Version 2
-     * @return		   String - DOM ID of list view icon
-     */
     public String getListViewIconV2() {
         return listViewIconV2;
     }
 
-    /**
-     * Getter for filter icon element for Version 2
-     * @return		   String - DOM ID of filter icon
-     * */
     public String getFiltersIconV2() {
         return filtersIconV2;
     }
 
-    /**
-     * Getter for search field element
-     * @return		   String - DOM ID of search field
-     */
     public String getSearchField() {
         return searchField;
     }
 
-    /**
-     * Getter for result item element
-     * @return		   String - DOM ID of result item
-     */
     public String getResultItem() {
         return resultItem;
     }
 
-    /**
-     * Getter for result grid element
-     * @return		   String - DOM ID of result grid
-     */
     public By getResultGrid() {
         return resultGrid;
     }
