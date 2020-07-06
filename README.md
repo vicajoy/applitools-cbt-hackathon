@@ -16,7 +16,7 @@ The project uses the following packages:
 
 
 ## Setup and Running Tests
-* Applitools API Key is being read from the environment variables.
+* Applitools API Key has been stored in the environment variables.
 * To execute traditional tests against Version 1, run `TraditionalTestV1.xml` suite. To run them against Version 2, 
 use `TraditionalTestV2.xml` suite. The same applies for the modern tests.
 * The suites for traditional tests include all tests which will be running on Chrome and Firefox browsers 
@@ -29,6 +29,8 @@ For Version 1, traditional test results will be written in `traditional-V1-TestR
 they will be recorded in `traditional-V2-TestResults.txt` file.
 * Used Chrome v83.0.4 and Firefox v77.0.1 browsers (the latest ones that Linux supports).
 * Edge Chromium is not available on Linux, that's why it's missing in these tests.
+* Drivers in this project have been downloaded for Linux system. So if you are working on another platform, 
+make sure to download the corresponding ones.
 
 
 ## Author

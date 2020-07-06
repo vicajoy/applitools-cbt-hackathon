@@ -1,3 +1,5 @@
+package base;
+import eyes.EyesManager;
 import org.assertj.core.api.SoftAssertions;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
@@ -9,8 +11,7 @@ import pages.HomePage;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 
-
-public class BaseTest {
+public abstract class BaseTest {
 
     private WebDriver driver;
     protected HomePage homePage;
@@ -18,7 +19,7 @@ public class BaseTest {
     protected String viewport;
     protected String deviceName;
     protected String browserName;
-    SoftAssertions softAssert = new SoftAssertions();
+    public SoftAssertions softAssert = new SoftAssertions();
 
     /**
      * Opens browser with the given viewport size

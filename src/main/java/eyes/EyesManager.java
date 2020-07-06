@@ -1,3 +1,5 @@
+package eyes;
+
 import com.applitools.eyes.BatchInfo;
 import com.applitools.eyes.MatchLevel;
 import com.applitools.eyes.selenium.BrowserType;
